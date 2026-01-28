@@ -24,6 +24,9 @@ if [ "$age" -ge 18 ]; then
 else
     echo "You are not eligible to vote."
 fi
+echo "enter a number:"
+read number
+echo "You entered: $number"
 
 # This is a comment
 
