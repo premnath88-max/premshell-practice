@@ -34,6 +34,8 @@ else
     echo "$number is odd."
 fi
 
+
+
 # This is a comment
 
 echo "This is a simple shell script."
