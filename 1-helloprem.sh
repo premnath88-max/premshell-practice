@@ -2,9 +2,4 @@
 name="Prem"
 age="32"
 city="Chintal"
-
-echo "name: $name"
-echo "age: $age"
-echo "city: $city"
-
- 
+echo "Hello, my name is $name. I am $age years old and I live in $city." 
