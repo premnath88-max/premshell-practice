@@ -1,11 +1,9 @@
 #!/bin/bash
 
+echo "this is the first number::"
+read NUM1
 
-if [ $# -eq 0 ]; then
-  echo "No arguments provided"
-  exit 1
-fi
+echo "this is the second number::"
+read NUM2
 
-for file in "$@"; do
-  echo "Processing $file"
-done
+Addition=((NUM1+NUM2))
