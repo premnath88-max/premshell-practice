@@ -8,5 +8,5 @@ read NUM2
 
 Addition=$(("NUM1+NUM2"))
 
-echo "Provide Addition count"
+echo "Addition= $Addition"
 
