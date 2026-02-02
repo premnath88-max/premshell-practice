@@ -9,3 +9,6 @@ if [ $((number % 2)) -eq 0 ]; then
 else
     echo "$number is odd."
 fi       
+
+
+am learning devops
