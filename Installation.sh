@@ -40,3 +40,17 @@ else
 echo  "INSTALLING MYSQL.......SUCCESS "
 
 fi
+
+dnf install nodejs -y
+
+if [ $? -ne 0 ]
+
+echo "INSTALLLING NODEJS ......FAILURE"
+
+exit 1
+
+else
+
+echo "INSTALLLING NODEJS ......SUCCESS"
+
+fi
