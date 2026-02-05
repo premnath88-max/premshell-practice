@@ -1,10 +1,10 @@
 #!/bin/bash
 
-NAME1=$1
-NAME2=$2
+echo "Enter username"
+read USER_NAME
 
-echo "$NAME1: Hello $NAME2 how are you"
-echo "$NAME2: Hi $NAME1 I am Fine"
+echo "USer name is :: $USER_NAME"
+
 
 
 
