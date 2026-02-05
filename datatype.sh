@@ -3,7 +3,7 @@
 NO1=$1
 NO2=$2
 
-SUM=$((NO1+N02))
+SUM=$((NO1+NO2))
 SUB=$((NO1-NO2))
 DIV=$((NO1/NO2))
 MUL=$((NO1*NO1))
