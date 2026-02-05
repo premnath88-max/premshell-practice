@@ -2,5 +2,5 @@
 
 TIMESTAMP=$(date)
 
-echo "The Output is :: $TIMESTAMP"
+echo "Current timeis :: $TIMESTAMP"
 
