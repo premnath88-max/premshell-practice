@@ -33,7 +33,7 @@ if [ $? -ne 0 ] ;then
 
 echo  "INSTALLING MYSQL.......FAILURE "
 
-exit 1
+    exit 1
 
 else
 
@@ -41,13 +41,13 @@ echo  "INSTALLING MYSQL.......SUCCESS "
 
 fi
 
-dnf install nodejss -y
+dnf install nodejs -y
 
 if [ $? -ne 0 ]
 
 echo "INSTALLLING NODEJS ......FAILURE"
 
-exit 1
+    exit 1
 
 else
 
