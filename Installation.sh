@@ -25,3 +25,18 @@ else
     echo  "INSTALLING NGINX.......SUCCESS "
 
 fi    
+
+
+dnf install mysql -y
+
+if [ $? -ne 0 ] ;then
+
+echo  "INSTALLING MYSQL.......FAILURE "
+
+exit 1
+
+else
+
+echo  "INSTALLING MYSQL.......SUCCESS "
+
+fi
