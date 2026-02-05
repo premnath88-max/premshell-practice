@@ -1,10 +1,5 @@
 #!/bin/bash
 
-R="\e[31m"
-G="\e[32m"
-Y="\e[33m"
-N="\e[0m"
-
 
 USERID=$(id -u)
 
@@ -22,11 +17,11 @@ dnf install nginx -y
 
 
 if [ $? -ne 0 ]; then
-    echo -e "INSTALLING NGINX.......FAILURE $R"
+    echo  "INSTALLING NGINX.......FAILURE "
     exit 1
 
 else
 
-    echo -e "INSTALLING NGINX.......SUCCESS $G"
+    echo  "INSTALLING NGINX.......SUCCESS "
 
 fi    
