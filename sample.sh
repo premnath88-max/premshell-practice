@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TIMESTAMP=$(date)
+LOAD_AVERAGE=$(uptime;top)
 
-echo "Current timeis :: $TIMESTAMP"
+echo "Current timeis :: $LOAD_AVERAGE"
 
