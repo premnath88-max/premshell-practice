@@ -41,7 +41,7 @@ echo  "INSTALLING MYSQL.......SUCCESS "
 
 fi
 
-dnf install nodejs -y
+dnf install nodejss -y
 
 if [ $? -ne 0 ]
 
