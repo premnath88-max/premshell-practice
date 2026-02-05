@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TOP=$(top)
+CPU=$(cat /proc/cpuinfo)
 
-echo "High Processess running on server is ::: $TOP"
+echo "High Processess running on server is ::: $CPU"
 
