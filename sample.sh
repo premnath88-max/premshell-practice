@@ -1,6 +1,10 @@
 #!/bin/bash
 
-CPU=$(cat /proc/cpuinfo)
+START_TIME="date"
 
-echo "High Processess running on server is ::: $CPU"
+echo "script executed at :: $START_TIME"
+
+sleep 5
+
+echo "script executed at :: $START_TIME"
 
