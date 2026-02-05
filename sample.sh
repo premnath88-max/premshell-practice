@@ -1,15 +1,6 @@
 #!/bin/bash
 
-echo "Enter username"
-read USER_NAME
+TIMESTAMP=$(date)
 
-echo "USer name is :: $USER_NAME"
-
-echo "Enter your password"
-read -s  PASSWORD
-
-echo "Password::"
-
-
-
+echo "The Output is :: $TIMESTAMP"
 
