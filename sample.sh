@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOAD_AVERAGE=$(uptime)
+TOP=$(top)
 
-echo "Current uptime is ::: $LOAD_AVERAGE"
+echo "High Processess running on server is ::: $TOP"
 
