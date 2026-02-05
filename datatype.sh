@@ -12,3 +12,9 @@ echo "Output is:: $SUM"
 echo "Output is:: $SUB"
 echo "Output is:: $DIV"
 echo "Output is:: $MUL"
+
+#Array
+
+FRUITS=("apple""banana""Orange")
+
+echo "All fruits are : ${FRUITS[@]}"
