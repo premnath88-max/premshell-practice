@@ -2,5 +2,5 @@
 
 LOAD_AVERAGE=$(uptime)
 
-echo "Current timeis :: $LOAD_AVERAGE"
+echo "Current uptime is ::: $LOAD_AVERAGE"
 
