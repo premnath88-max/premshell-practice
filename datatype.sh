@@ -1,11 +1,16 @@
 #!/bin/bash
 
+NUM=$1
 
-#Array
+if [ $NUM -ge 20 ]; then
 
-FRUITS=("apple"  "banana"  "Orange" "Guava")
+    echo "Given number:: $NUM is greater than 20"
 
-echo "First fruit is: ${FRUITS[0]}"
-echo "Second fruit is: ${FRUITS[1]}"
-echo "Third fruit is: ${FRUITS[2]}"
-echo "Fourth fruit is: ${FRUITS[3]}"
+else
+    
+    echo "Given number:: $NUM is less than 20"
+
+
+
+fi
+
