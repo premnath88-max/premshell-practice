@@ -32,13 +32,13 @@ do
 
     dnf list installed $package &>>$LOGS_FILE
 
-    for [ $? -ne 0 ]; then
+    if [ $? -ne 0 ]; then
 
         echo "$package not installed,Installing $package"
         dnf install $package -y &>>$LOGS_FILE
         VALIDATE $? "Installing $package"
     else 
-        echo "$package Already installed,SKIPPING"
+        echo "$package Already installed,SKIPPING" | tee -a $LOGS_FILE
 
      fi   
 
