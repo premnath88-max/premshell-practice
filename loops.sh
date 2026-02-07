@@ -1,5 +1,9 @@
 #!/bin/bash
 
+R="\e[31m"
+G="\e[32m"
+Y="\e[33m"
+N="\e[0m"
 
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
@@ -16,11 +20,11 @@ mkdir -p $LOGS_FOLDER
 
     VALIDATE(){
         if [ $1 -ne 0 ]; then
-    echo  "$2.......FAILURE"    | tee -a $LOGS_FILE
+    echo -e "$2.......FAILURE" $R   | tee -a $LOGS_FILE
     exit 1
 else
 
-    echo  "$2.......SUCCESS"  | tee -a $LOGS_FILE
+    echo  "$2.......SUCCESS" $  $G  | tee -a $LOGS_FILE
 fi    
 
     }
@@ -30,7 +34,7 @@ for package in $@
 
 do
 
-    dnf list installed $package &>>$LOGS_FILE
+    dnf list installed $package $G &>>$LOGS_FILE
 
     if [ $? -ne 0 ]; then
 
