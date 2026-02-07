@@ -1,9 +1,9 @@
 #!/bin/bash
 
-R="\e[31m"
-G="\e[32m"
-Y="\e[33m"
-N="\e[0m"
+R='\e[31m'
+G='\e[32m'
+B='\e[34m'
+N='\e[0m' # No Color (resets the text attributes)
 
 USERID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
