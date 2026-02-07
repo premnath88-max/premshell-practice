@@ -26,10 +26,20 @@ fi
     }
 
 
-for i in $@
+for package in $@
 
 do
-    dnf install $i -y &>>$LOGS_FILE
-    VALIDATE $? "Installing $i"
+
+    dnf list installed $package &>>$LOGS_FILE
+
+    for [ $? -ne 0 ]; then
+
+        echo "$package not installed,Installing $package"
+        dnf install $package -y &>>$LOGS_FILE
+        VALIDATE $? "Installing $package"
+    else 
+        echo "$package Already installed,SKIPPING"
+
+     fi   
 
 done
