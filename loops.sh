@@ -26,9 +26,10 @@ fi
     }
 
 
-for package in $@
+for i in $@
+
 do
-    dnf install $package -y
-    VALIDATE $? "$package installation"
+    dnf install $i -y &>>$LOGS_FILE
+    VALIDATE $? "Installing $i"
 
 done
