@@ -24,7 +24,7 @@ mkdir -p $LOGS_FOLDER
     exit 1
 else
 
-    echo  "$2.......$G SUCCESS $Y"    | tee -a $LOGS_FILE
+    echo  "$2.......$G SUCCESS $N"    | tee -a $LOGS_FILE
 fi    
 
     }
@@ -42,7 +42,7 @@ do
         dnf install $package -y &>>$LOGS_FILE
         VALIDATE $? "Installing $package"
     else 
-        echo "$package Already installed ...$Y SKIPPING $N" | tee -a $LOGS_FILE
+        echo "$package Already installed ...$Y SKIPPING $N"
 
      fi   
 
